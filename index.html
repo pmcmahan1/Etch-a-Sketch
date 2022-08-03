@@ -5,26 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.cdnfonts.com/css/kepolu" rel="stylesheet">
     <title>Etch-a-Sketch</title>
 </head>
 <body>
 
 <div class="container">
-    <div class="header"><h1>Etch-a-Sketch!</h1></div>
+    <div class="header"><h1>Etch-a-Sketch!</h1>
+    <h3 class="displaySize">Current Size: </h3></div>
     <div class="content">
         <div class="game"></div>
         <div class="buttons">
-            <button onclick="changeColor('black')">Black</button>
-            <button onclick="changeColor('white')">Eraser</button>
-            <button onclick="changeColor('random')">random</button>
-            <button onclick="reset()">Reset</button>
+            <button class="button" onclick="changeColor('black')">Black</button>
+            <button class="button" onclick="changeColor('white')">Eraser</button>
+            <button class="button" onclick="changeColor('random')">random</button>
+            <button class="button" onclick="reset()">Reset</button>
         </div>
+        
+        <div class="sizer">
         <input  type="text" 
                 placeholder="Board Size" 
-                value="16" 
+                value="32" 
                 onchange="boardSize(this.value)" 
         />
-        <button>Set Size</button>
+        <button class="sizeButton button">Set Size</button>
+    </div>
+    <p class="error"></p>
     </div>
 </div>
 
