@@ -1,2 +1,6 @@
 # Etch-a-Sketch
 TOP Project
+
+This was my first time creating an Etch-a-Sketch style page using primarily javascript
+A fair bit of googling was involved and then I had some fun experimenting with different fonts and styles
+Overall I think it came out fairly well!
