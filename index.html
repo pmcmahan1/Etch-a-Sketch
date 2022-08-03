@@ -9,7 +9,24 @@
 </head>
 <body>
 
-
+<div class="container">
+    <div class="header"><h1>Etch-a-Sketch!</h1></div>
+    <div class="content">
+        <div class="game"></div>
+        <div class="buttons">
+            <button onclick="changeColor('black')">Black</button>
+            <button onclick="changeColor('white')">Eraser</button>
+            <button onclick="changeColor('random')">random</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+        <input  type="text" 
+                placeholder="Board Size" 
+                value="16" 
+                onchange="boardSize(this.value)" 
+        />
+        <button>Set Size</button>
+    </div>
+</div>
 
 
 
